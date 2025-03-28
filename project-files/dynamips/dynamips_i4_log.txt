@@ -1,0 +1,30 @@
+Mar 28 10:35:29.710 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 28 10:35:29.710 HYPERVISOR: Started on IP = localhost, TCP port = 54823.
+Mar 28 10:35:30.175 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 28 10:35:30.176 HYPERVISOR: exec_cmd: hypervisor working_dir D:\00110100\GNS\MPLS1\project-files\dynamips 
+Mar 28 10:35:30.309 GENERAL: working_dir=D:\00110100\GNS\MPLS1\project-files\dynamips
+Mar 28 10:35:30.309 HYPERVISOR: exec_cmd: hypervisor working_dir D:\00110100\GNS\MPLS1\project-files\dynamips\ba4d33de-f4a3-4b3f-9bd6-b525dc036963 
+Mar 28 10:35:30.309 GENERAL: working_dir=D:\00110100\GNS\MPLS1\project-files\dynamips\ba4d33de-f4a3-4b3f-9bd6-b525dc036963
+Mar 28 10:35:30.310 HYPERVISOR: exec_cmd: vm create R1 1 c2600 
+Mar 28 10:35:30.312 VM: VM R1 created.
+Mar 28 10:35:30.312 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Mar 28 10:35:30.312 HYPERVISOR: exec_cmd: c2600 get_mac_addr R1 
+Mar 28 10:35:30.313 HYPERVISOR: exec_cmd: vm set_ram R1 160 
+Mar 28 10:35:30.314 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/andra/GNS3/images/IOS/c2600-adventerprisek9-mz.124-15.T14.image 
+Mar 28 10:35:30.315 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Mar 28 10:35:30.316 HYPERVISOR: exec_cmd: vm set_sparse_mem R1 1 
+Mar 28 10:35:30.374 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/andra/GNS3/images/IOS/c2600-adventerprisek9-mz.124-15.T14.image 
+Mar 28 10:35:39.298 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/andra/GNS3/images/IOS/c2600-adventerprisek9-mz.124-15.T14.image 
+Mar 28 10:36:15.353 HYPERVISOR: exec_cmd: nio create_udp udp-8f63e192-37b3-413d-8b97-0e7752a66e30 10002 127.0.0.1 10003 
+Mar 28 10:36:18.455 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-8f63e192-37b3-413d-8b97-0e7752a66e30 
+Mar 28 10:36:18.456 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 28 10:38:13.805 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 28 10:38:13.806 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 0 
+Mar 28 10:38:13.807 HYPERVISOR: exec_cmd: nio delete udp-8f63e192-37b3-413d-8b97-0e7752a66e30 
+Mar 28 10:38:14.296 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 28 10:38:14.297 HYPERVISOR: exec_cmd: vm extract_config R1 
+Mar 28 10:38:14.298 HYPERVISOR: exec_cmd: vm delete R1 
+Mar 28 10:38:14.298 VM: VM R1 destroyed.
+Mar 28 10:38:14.300 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 28 10:38:14.722 HYPERVISOR: Stopped.
+Mar 28 10:38:14.722 GENERAL: reset done.

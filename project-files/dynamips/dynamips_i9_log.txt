@@ -1,0 +1,108 @@
+Mar 28 10:45:49.265 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 28 10:45:49.265 HYPERVISOR: Started on IP = localhost, TCP port = 55247.
+Mar 28 10:45:49.667 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 28 10:45:49.669 HYPERVISOR: exec_cmd: hypervisor working_dir D:\00110100\GNS\MPLS1\project-files\dynamips 
+Mar 28 10:45:49.670 GENERAL: working_dir=D:\00110100\GNS\MPLS1\project-files\dynamips
+Mar 28 10:45:49.670 HYPERVISOR: exec_cmd: hypervisor working_dir D:\00110100\GNS\MPLS1\project-files\dynamips\9ced9d83-f160-47e5-9be4-2c5f5328ad35 
+Mar 28 10:45:49.671 GENERAL: working_dir=D:\00110100\GNS\MPLS1\project-files\dynamips\9ced9d83-f160-47e5-9be4-2c5f5328ad35
+Mar 28 10:45:49.671 HYPERVISOR: exec_cmd: vm create R3 3 c2691 
+Mar 28 10:45:49.677 VM: VM R3 created.
+Mar 28 10:45:49.679 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Mar 28 10:45:49.679 HYPERVISOR: exec_cmd: c2691 get_mac_addr R3 
+Mar 28 10:45:49.680 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Mar 28 10:45:49.682 HYPERVISOR: exec_cmd: vm set_ram R3 192 
+Mar 28 10:45:49.684 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/andra/GNS3/images/IOS/c2691-adventerprisek9-mz.124-15.T14.image 
+Mar 28 10:45:49.685 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 28 10:45:49.686 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60bcf9f8 
+Mar 28 10:45:49.687 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Mar 28 10:45:49.688 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Mar 28 10:45:49.752 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/andra/GNS3/images/IOS/c2691-adventerprisek9-mz.124-15.T14.image 
+Mar 28 10:45:51.259 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/andra/GNS3/images/IOS/c2691-adventerprisek9-mz.124-15.T14.image 
+Mar 28 10:46:06.231 HYPERVISOR: exec_cmd: nio create_udp udp-9bd988e7-b1ad-47ab-b9dc-8af536637b50 10010 127.0.0.1 10011 
+Mar 28 10:46:07.073 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-9bd988e7-b1ad-47ab-b9dc-8af536637b50 
+Mar 28 10:46:07.075 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 28 10:46:29.909 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/andra/GNS3/images/IOS/c2691-adventerprisek9-mz.124-15.T14.image 
+Mar 28 10:46:32.727 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/andra/GNS3/images/IOS/c2691-adventerprisek9-mz.124-15.T14.image 
+Mar 28 10:46:55.273 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/andra/GNS3/images/IOS/c2691-adventerprisek9-mz.124-15.T14.image 
+Mar 28 10:46:55.274 HYPERVISOR: exec_cmd: vm rename R3 FRANCE 
+Mar 28 10:46:55.342 HYPERVISOR: exec_cmd: vm set_ios FRANCE C:/Users/andra/GNS3/images/IOS/c2691-adventerprisek9-mz.124-15.T14.image 
+Mar 28 10:50:32.136 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+Mar 28 10:50:32.169 VM: VM Ghost created.
+Mar 28 10:50:32.170 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/andra/GNS3/images/IOS/c2691-adventerprisek9-mz.124-15.T14.image 
+Mar 28 10:50:32.171 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Mar 28 10:50:32.172 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost D:\00110100\GNS\MPLS1\project-files\dynamips\c2691-adventerprisek9-mz.124-15.T14.image-192.ghost 
+Mar 28 10:50:32.172 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Mar 28 10:50:32.173 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Mar 28 10:50:32.173 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Mar 28 10:50:32.174 HYPERVISOR: exec_cmd: vm start Ghost 
+Mar 28 10:50:32.643 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Mar 28 10:50:32.645 HYPERVISOR: exec_cmd: vm stop Ghost 
+Mar 28 10:50:32.848 VM: VM Ghost shutdown.
+Mar 28 10:50:32.849 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Mar 28 10:50:32.851 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Mar 28 10:50:32.851 VM: VM Ghost destroyed.
+Mar 28 10:50:32.870 HYPERVISOR: exec_cmd: vm set_ghost_status FRANCE 2 
+Mar 28 10:50:32.871 HYPERVISOR: exec_cmd: vm set_ghost_file FRANCE D:\00110100\GNS\MPLS1\project-files\dynamips\c2691-adventerprisek9-mz.124-15.T14.image-192.ghost 
+Mar 28 10:50:32.872 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 10:50:32.882 HYPERVISOR: exec_cmd: vm set_config FRANCE configs\i3_startup-config.cfg 
+Mar 28 10:50:32.882 HYPERVISOR: exec_cmd: vm start FRANCE 
+Mar 28 10:51:03.218 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 10:51:03.235 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 11:01:33.407 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 11:01:33.407 HYPERVISOR: exec_cmd: vm stop FRANCE 
+Mar 28 11:01:33.551 VM: VM FRANCE shutdown.
+Mar 28 11:01:33.555 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 11:02:42.584 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 11:02:42.584 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding FRANCE 0 0 
+Mar 28 11:02:42.585 HYPERVISOR: exec_cmd: nio delete udp-9bd988e7-b1ad-47ab-b9dc-8af536637b50 
+Mar 28 11:02:49.247 HYPERVISOR: exec_cmd: nio create_udp udp-20c366b9-3250-4fe4-a390-748862836b8b 10010 127.0.0.1 10011 
+Mar 28 11:02:49.250 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FRANCE 0 0 udp-20c366b9-3250-4fe4-a390-748862836b8b 
+Mar 28 11:02:49.251 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 11:03:05.272 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 11:03:05.272 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding FRANCE 0 0 
+Mar 28 11:03:05.274 HYPERVISOR: exec_cmd: nio delete udp-20c366b9-3250-4fe4-a390-748862836b8b 
+Mar 28 11:03:11.475 HYPERVISOR: exec_cmd: nio create_udp udp-920a29d9-bd88-4dfc-b65a-41756cc795a3 10010 127.0.0.1 10011 
+Mar 28 11:03:11.479 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FRANCE 0 0 udp-920a29d9-bd88-4dfc-b65a-41756cc795a3 
+Mar 28 11:03:11.479 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 11:03:32.130 HYPERVISOR: exec_cmd: vm set_ghost_status FRANCE 2 
+Mar 28 11:03:32.131 HYPERVISOR: exec_cmd: vm set_ghost_file FRANCE D:\00110100\GNS\MPLS1\project-files\dynamips\c2691-adventerprisek9-mz.124-15.T14.image-192.ghost 
+Mar 28 11:03:32.132 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 11:03:32.143 HYPERVISOR: exec_cmd: vm set_config FRANCE configs\i3_startup-config.cfg 
+Mar 28 11:03:32.144 HYPERVISOR: exec_cmd: vm start FRANCE 
+Mar 28 11:04:02.521 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 11:04:02.532 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 11:09:56.427 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 11:09:56.428 HYPERVISOR: exec_cmd: vm stop FRANCE 
+Mar 28 11:09:56.558 VM: VM FRANCE shutdown.
+Mar 28 11:09:56.560 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 11:10:21.997 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 11:10:21.997 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding FRANCE 0 0 
+Mar 28 11:10:21.998 HYPERVISOR: exec_cmd: nio delete udp-920a29d9-bd88-4dfc-b65a-41756cc795a3 
+Mar 28 11:10:26.484 HYPERVISOR: exec_cmd: nio create_udp udp-b94c8b04-b6c6-4c0a-85f4-8918fc087aff 10010 127.0.0.1 10011 
+Mar 28 11:10:26.488 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FRANCE 0 0 udp-b94c8b04-b6c6-4c0a-85f4-8918fc087aff 
+Mar 28 11:10:26.488 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 11:10:31.157 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 11:10:31.157 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding FRANCE 0 0 
+Mar 28 11:10:31.159 HYPERVISOR: exec_cmd: nio delete udp-b94c8b04-b6c6-4c0a-85f4-8918fc087aff 
+Mar 28 11:10:36.824 HYPERVISOR: exec_cmd: nio create_udp udp-ccc44abd-dfba-4c71-aae7-48fd0977295a 10010 127.0.0.1 10011 
+Mar 28 11:10:36.828 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FRANCE 0 1 udp-ccc44abd-dfba-4c71-aae7-48fd0977295a 
+Mar 28 11:10:36.829 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 11:10:48.965 HYPERVISOR: exec_cmd: vm set_ghost_status FRANCE 2 
+Mar 28 11:10:48.974 HYPERVISOR: exec_cmd: vm set_ghost_file FRANCE D:\00110100\GNS\MPLS1\project-files\dynamips\c2691-adventerprisek9-mz.124-15.T14.image-192.ghost 
+Mar 28 11:10:48.974 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 11:10:48.983 HYPERVISOR: exec_cmd: vm set_config FRANCE configs\i3_startup-config.cfg 
+Mar 28 11:10:48.983 HYPERVISOR: exec_cmd: vm start FRANCE 
+Mar 28 11:11:19.337 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 11:11:19.352 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 11:19:19.565 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 11:19:19.579 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 16:48:57.863 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 16:48:57.875 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 17:08:28.319 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 17:08:28.330 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 17:16:58.481 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 17:16:58.491 HYPERVISOR: exec_cmd: vm extract_config FRANCE 
+Mar 28 17:25:29.237 HYPERVISOR: exec_cmd: vm get_status FRANCE 
+Mar 28 17:25:29.239 HYPERVISOR: exec_cmd: vm stop FRANCE 
+Mar 28 17:25:29.365 VM: VM FRANCE shutdown.
+Mar 28 17:25:29.366 HYPERVISOR: exec_cmd: vm extract_config FRANCE 

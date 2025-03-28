@@ -1,0 +1,38 @@
+Mar 28 10:33:44.702 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 28 10:33:44.702 HYPERVISOR: Started on IP = localhost, TCP port = 54753.
+Mar 28 10:33:44.847 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 28 10:33:44.852 HYPERVISOR: exec_cmd: hypervisor working_dir D:\00110100\GNS\MPLS1\project-files\dynamips 
+Mar 28 10:33:44.983 GENERAL: working_dir=D:\00110100\GNS\MPLS1\project-files\dynamips
+Mar 28 10:33:44.983 HYPERVISOR: exec_cmd: hypervisor working_dir D:\00110100\GNS\MPLS1\project-files\dynamips\0dabcb19-a7d2-472b-a662-8095d0627841 
+Mar 28 10:33:44.983 GENERAL: working_dir=D:\00110100\GNS\MPLS1\project-files\dynamips\0dabcb19-a7d2-472b-a662-8095d0627841
+Mar 28 10:33:44.983 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Mar 28 10:33:44.992 VM: VM R1 created.
+Mar 28 10:33:44.992 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Mar 28 10:33:44.992 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Mar 28 10:33:44.992 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Mar 28 10:33:44.992 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Mar 28 10:33:44.992 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 28 10:33:44.992 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Mar 28 10:33:44.992 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 28 10:33:45.002 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-4T 
+Mar 28 10:33:45.002 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 28 10:33:45.002 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 16 WIC-1T 
+Mar 28 10:33:45.002 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 28 10:33:45.002 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 32 WIC-1T 
+Mar 28 10:33:45.007 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 28 10:33:45.007 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 48 WIC-1T 
+Mar 28 10:33:45.007 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/andra/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Mar 28 10:33:45.012 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 28 10:33:45.012 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60aa1da0 
+Mar 28 10:33:45.012 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Mar 28 10:33:45.012 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Mar 28 10:33:45.092 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/andra/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Mar 28 10:33:47.372 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/andra/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Mar 28 10:33:58.122 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/andra/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Mar 28 10:35:22.118 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 28 10:35:22.120 HYPERVISOR: exec_cmd: vm extract_config R1 
+Mar 28 10:35:22.121 HYPERVISOR: exec_cmd: vm delete R1 
+Mar 28 10:35:22.121 VM: VM R1 destroyed.
+Mar 28 10:35:22.125 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 28 10:35:22.325 HYPERVISOR: Stopped.
+Mar 28 10:35:22.325 GENERAL: reset done.
