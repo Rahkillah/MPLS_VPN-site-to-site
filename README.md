@@ -116,7 +116,7 @@ sh mpls forwarding-table
 
 ```
 
-### Vérifications
+### Verifications
 ```bash
 # Vérification de l'état de l'interface MPLS
 sh mpls ldp neighbor
