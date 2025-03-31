@@ -20,7 +20,7 @@ The network topology is as follows:
 
 ## Configuration de base des routeurs
 
-### 1. Routeur MADA
+### 1. Routeur MADA (Cisco 2691 124-15.T14)
 
 ```bash
 conf t
@@ -50,7 +50,7 @@ sh mpls ldp neighbor
 sh mpls forwarding-table
 ```
 
-### 2. Routeur MOZAMBIQUE
+### 2. Routeur MOZAMBIQUE (Cisco 2691 124-15.T14)
 
 ```bash
 conf t
@@ -86,7 +86,7 @@ sh mpls forwarding-table
 
 ```
 
-### 3. Routeur FRANCE
+### 3. Routeur FRANCE (Cisco 2691 124-15.T14)
 
 ```bash
 conf t
