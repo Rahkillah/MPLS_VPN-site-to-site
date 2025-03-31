@@ -128,17 +128,6 @@ sh mpls forwarding-table
 sh ip ospf neighbor
 ```
 
-### Explanation of the structure:
-- **Project Introduction**: Explains the objective of the project, namely the configuration of a site-to-site VPN with MPLS and OSPF.
-- **Prerequisites**: Describes the elements needed to begin the configuration.
-- **Network Topology**: A simple diagram (in text) to explain the router configuration.
-- **Router Configuration**: Each section provides the commands needed to configure the interfaces and enable OSPF and MPLS on each router.
-- **Verifications**: Explains how to verify that the configurations are applied correctly and that OSPF and MPLS neighbors are correctly established.
-- **Conclusion**: Summarizes what has been accomplished and the expected results.
-- **License**: A section template to include a license if necessary.
-
-This `README.md` file can be placed at the root of your GitHub repository or other version control system to provide clear instructions to users who wish to reproduce or use this configuration.
-
 ## License
 
 Copyright © 2025 [Andrandraina](facebook.com/andrandraina.randrianaivo.10). All rights reserved.
