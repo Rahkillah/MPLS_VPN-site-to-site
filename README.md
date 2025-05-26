@@ -130,4 +130,4 @@ sh ip ospf neighbor
 
 ## License
 
-Copyright © 2025 [Andrandraina](facebook.com/andrandraina.randrianaivo.10). All rights reserved.
+Copyright © 2025 [Andrandraina](https://www.linkedin.com/in/andrandraina-randrianaivo-562aa3282/). All rights reserved.
